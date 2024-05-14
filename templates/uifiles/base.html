@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from html.themexriver.com/archipark/home-two/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 May 2024 12:47:12 GMT -->
+<head>
+		<meta charset="UTF-8">
+        {% block title %}{% endblock %} | sree
+		<!-- <link rel="shortcut icon" href="{% static 'assets/img/logo/ficon.png' %}' %}" type="image/x-icon"> -->
+		<meta name="author" content="themexriver">
+		<meta name="description" content="ArchiPark - Architecture Agency HTML Template">
+		<meta name="keywords" content="agency, architect, architecture, creative, decor, design, furniture store, interior, multipurpose">
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/sitefont.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/twenty.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/video.min.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/slick-theme.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/odometer-theme-default.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/rs6.css' %}">
+		<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+        {% block stylesheets %}{% endblock stylesheets %}
+	</head>
+
+	<body class="arc5-body">
+		<div id="preloader"></div>
+		<div class="up">
+			<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
+		</div>
+
+		<!-- Start of header section
+	============================================= -->
+		<header id="main-header" class="main-header-area header-style-five arc5-header">
+			<div class="container">
+				<div class="header-main-menu  clearfix">
+					<div class="site-logo float-left">
+						<a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+					</div>
+					<div class="main-header-menu-item float-right">
+						<nav class="main-navigation-area clearfix ul-li">
+							<ul class="menu-navigation">
+								<li class="dropdown">
+									<a href="#">Home</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a href="../home-one/index.html">Home Page 1</a></li>
+										<li><a href="index.html">Home Page 2</a></li>
+										<li><a href="../home-three/index.html">Home Page 3</a></li>
+										<li><a href="../home-four/index.html">Home Page 4</a></li>
+									</ul>
+								</li>
+								<li><a href="../pages/about.html">About</a></li>
+								<li><a href="../pages/service.html">Services</a></li>
+								<li class="dropdown">
+									<a href="#">News</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a href="../pages/blog.html">News </a></li>
+										<li><a href="../pages/blog-single.html">News Details</a></li>
+									</ul>
+								</li>
+								<li><a href="../pages/contact.html">Contact</a></li>
+								<li class="dropdown">
+									<a href="#">Others</a>
+									<ul class="dropdown-menu clearfix">
+										<li><a href="../pages/404.html">404 Page </a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<div class="header-cta-btn text-center float-right">
+							<a href="#">Get A Quote</a>
+						</div>
+					</div>
+				</div>
+				<div class="str-mobile_menu relative-position">
+					<div class="str-mobile_menu_button str-open_mobile_menu">
+						 <i class="flaticon-menu"></i>
+					</div>
+					<div class="str-mobile_menu_wrap">
+						<div class="mobile_menu_overlay str-open_mobile_menu"></div>
+						<div class="str-mobile_menu_content">
+							<div class="str-mobile_menu_close str-open_mobile_menu">
+								<span><i class="fas fa-times"></i></span>
+							</div>
+							<div class="m-brand-logo text-center">
+								<a href="index.html"><img src="{% static 'assets/img/logo/logo.png' %}" alt=""></a>
+							</div>
+							<nav class="str-mobile-main-navigation  clearfix ul-li">
+								<ul id="main-nav" class="navbar-nav text-capitalize clearfix">
+									<li class="dropdown">
+										<a href="#">Home</a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="../home-one/index.html">Home Page 1</a></li>
+											<li><a href="index.html">Home Page 2</a></li>
+											<li><a href="../home-three/index.html">Home Page 3</a></li>
+											<li><a href="../home-four/index.html">Home Page 4</a></li>
+										</ul>
+									</li>
+									<li><a href="../pages/about.html">About</a></li>
+									<li><a href="../pages/service.html">Services</a></li>
+									<li class="dropdown">
+										<a href="#">News</a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="../pages/blog.html">News </a></li>
+											<li><a href="../pages/blog-single.html">News Details</a></li>
+										</ul>
+									</li>
+									<li><a href="../pages/contact.html">Contact</a></li>
+									<li class="dropdown">
+										<a href="#">Others</a>
+										<ul class="dropdown-menu clearfix">
+											<li><a href="../pages/404.html">404 Page </a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<!-- /mobile-menu -->
+			</div>
+		</header>
+
+        {% block content %}
+        {% endblock %}
+	
+		<!-- Footer Section Start -->
+		<footer class="arc5-footer-section" data-background="{% static 'assets/img/footer/footer-bg.png' %}">
+			<div class="arc5-overlay-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="arc5-f-top-shape"></div>
+							<div class="arc5-f-top">
+								<div class="arc5-f-top-content" data-background="{% static 'assets/img/footer/footer-top-bg.png' %}">
+									<div class="arc5-title-area arc5-headline">
+										<span>Building House</span>
+										<h3>Lets work together to make a good building</h3>
+									</div>
+									<div class="arc5-template-btn">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="arc5-footer-bottom">
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="arc5-footer-widget arc5-headline">
+									<h5>About</h5>
+									<p>Audantiue laudan tium, totam rem ape riam, eaque ipsa quae ab illo invento minim veniam, quis nostrud exercita tion ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+									<div class="arc5-footer-social">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+										<a href="#"><i class="fab fa-linkedin-in"></i></a>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+								<div class="arc5-footer-widget arc5-headline">
+									<h5>quick links</h5>
+									<div class="arc5-footer-nav">
+										<ul>
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Team Members</a></li>
+											<li><a href="#">Career</a></li>
+											<li><a href="#">Offers</a></li>
+											<li><a href="#">Benifits</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="arc5-footer-widget arc5-headline">
+									<h5>service</h5>
+									<div class="arc5-footer-nav">
+										<ul>
+											<li><a href="#">Industrial Design</a></li>
+											<li><a href="#">Residential Interior Design</a></li>
+											<li><a href="#">Apartment exterior Design</a></li>
+											<li><a href="#">Commercial Building Design</a></li>
+											<li><a href="#">Digital Consultancy & Marketintg</a></li>
+											<li><a href="#">Architectural Consultancy</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-6 col-sm-6">
+								<div class="arc5-footer-widget arc5-headline">
+									<h5>Newsletter</h5>
+									<p>Audantiue laudan tium, totam rem  ipsa quae ab illo invento</p>
+									<form action="#" class="arc5-ft-form">
+										<input type="email" placeholder="Your email here">
+										<button type="submit" class="submit-btn"><i class="far fa-envelope"></i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="arc5-footer-copyright">
+						<div class="row">
+							<div class="col-lg-6">
+								<p>All rights reserved &copy; <strong><a href=#">ThemeXriver</a></strong> 2021</p>
+							</div>
+							<div class="col-lg-6">
+								<div class="arc5-copyright-links">
+									<a href="#">Terms & Condition</a>
+									<a href="#">Terms & Condition</a>
+									<a href="#">Terms & Condition</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- For Js Library -->
+		<script src="{% static 'assets/js/jquery.min.js"></script>
+		<script src="{% static 'assets/js/bootstrap.min.js"></script>
+		<script src="{% static 'assets/js/popper.min.js"></script>
+		<script src="{% static 'assets/js/owl.carousel.min.js"></script>
+		<script src="{% static 'assets/js/owl.carousel2.thumbs.js"></script>
+		<script src="{% static 'assets/js/jarallax.js"></script>
+		<script src="{% static 'assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="{% static 'assets/js/appear.js"></script>
+		<script src="{% static 'assets/js/wow.min.js"></script>
+		<script src="{% static 'assets/js/twenty.js"></script>
+		<script src="{% static 'assets/js/odometer.js"></script>
+		<script src="{% static 'assets/js/slick.js"></script>
+		<script src="{% static 'assets/js/waypoints.min.js"></script>
+		<script src="{% static 'assets/js/jquery.counterup.min.js"></script>
+		<script src="{% static 'assets/js/rbtools.min.js"></script>
+		<script src="{% static 'assets/js/rs6.min.js"></script>
+		<script src="{% static 'assets/js/script.js"></script>
+        
+        {% block javascripts %} {% endblock javascripts %}
+
+
+		<script type="text/javascript">
+		
+			var	revapi7,
+				tpj;
+			function revinit_revslider71() {
+			jQuery(function() {
+				tpj = jQuery;
+				revapi7 = tpj("#rev_slider_7_1");
+				if(revapi7==undefined || revapi7.revolution == undefined){
+					revslider_showDoubleJqueryError("rev_slider_7_1");
+				}else{
+					revapi7.revolution({
+						DPR:"dpr",
+						sliderLayout:"fullwidth",
+						visibilityLevels:"1240,1024,778,480",
+						gridwidth:1240,
+						gridheight:900,
+						perspective:600,
+						perspectiveType:"global",
+						editorheight:"900,768,960,720",
+						responsiveLevels:"1240,1024,778,480",
+						progressBar:{disableProgressBar:true},
+						navigation: {
+							wheelCallDelay:1000,
+							onHoverStop:false,
+							bullets: {
+								enable:true,
+								tmp:"<span class=\"tp-bullet-inner\"></span>",
+								style:"uranus",
+								h_align:"right",
+								v_align:"center",
+								h_offset:20,
+								v_offset:0,
+								direction:"vertical",
+								space:10
+							}
+						},
+						fallbacks: {
+							allowHTML5AutoPlayOnAndroid:true
+						},
+					});
+				}
+				
+			});
+			} // End of RevInitScript
+		var once_revslider71 = false;
+		if (document.readyState === "loading") {document.addEventListener('readystatechange',function() { if((document.readyState === "interactive" || document.readyState === "complete") && !once_revslider71 ) { once_revslider71 = true; revinit_revslider71();}});} else {once_revslider71 = true; revinit_revslider71();}
+		</script>
+		<style type="text/css">#rev_slider_7_1_wrapper .uranus .tp-bullet{border-radius:50%; box-shadow:0 0 0 2px rgba(255,255,255,0); -webkit-transition:box-shadow 0.3s ease; transition:box-shadow 0.3s ease; background:transparent; width:8px; height:8px}#rev_slider_7_1_wrapper .uranus .tp-bullet.selected,#rev_slider_7_1_wrapper .uranus .tp-bullet:hover{box-shadow:0 0 0 2px #ff5b2e; border:none; border-radius:50%; background:transparent}#rev_slider_7_1_wrapper .uranus .tp-bullet-inner{-webkit-transition:background-color 0.3s ease,-webkit-transform 0.3s ease; transition:background-color 0.3s ease,transform 0.3s ease; top:0; left:0; width:100%; height:100%; outline:none; border-radius:50%; background-color:rgba(255,255,255,0); background-color:#ffffff; text-indent:-999em; cursor:pointer; position:absolute}#rev_slider_7_1_wrapper .uranus .tp-bullet.selected .tp-bullet-inner,#rev_slider_7_1_wrapper .uranus .tp-bullet:hover .tp-bullet-inner{transform:scale(0.4); -webkit-transform:scale(0.4); background-color:#ff5b2e}</style><!-- /STYLE -->
+	
+	</body>
+
+<!-- Mirrored from html.themexriver.com/archipark/home-two/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 May 2024 12:47:25 GMT -->
+</html>			
