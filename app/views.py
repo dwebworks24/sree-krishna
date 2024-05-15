@@ -8,7 +8,7 @@ from django.http import JsonResponse,HttpResponse
 def home(request):
     context = {}
     try:
-        return render(request, 'uifiles/base.html',context)
+        return render(request, 'uifiles/index.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
         return HttpResponse(html_template.render(context, request))
