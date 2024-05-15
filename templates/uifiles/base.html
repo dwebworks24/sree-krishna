@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Responsive css -->
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     {% block stylesheets %}{% endblock stylesheets %}
 </head>
 
@@ -36,9 +37,9 @@
     <!-- HEADER AREA START (header-5) -->
     <header class="ltn__header-area ltn__header-5 ltn__header-transparent--- gradient-color-4---">
         <!-- ltn__header-top-area start -->
-        <div class="ltn__header-top-area p-2 section-bg-6 top-area-color-white---">
+        <div class=" ltn__header-top-area p-2 section-bg-6 top-area-color-white---">
             <div class="container">
-                <div class="row">
+                <div class="row ">
                     <div class="col-md-4">
                         <div class="ltn__top-bar-menu">
                             <ul>
@@ -110,7 +111,7 @@
                     <div class="col">
                         <div class="site-logo-wrap">
                             <div class="site-logo">
-                                <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="Logo"></a>
+                                <a href="index.html"><img src="{% static 'img/banner/logo.png' %}" style="height:50px;" alt="Logo"></a>
                             </div>
                             <div class="get-support clearfix d-none">
                                 <div class="get-support-icon">
@@ -434,11 +435,48 @@
                     <div class="col-xl-3 col-md-6 col-sm-6 col-12">
                         <div class="footer-widget footer-about-widget">
                             <div class="footer-logo">
-                                <div class="site-logo">
-                                    <img src="img/logo-2.png" alt="Logo">
+                                <div class="site-logo mb-2">
+                                    <img src="{% static 'img/banner/logo.png' %}" alt="Logo">
                                 </div>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+                            <p>Sree Krishna Engineers excels in construction and real estate with comprehensive services, including approval drawings and ventures.</p>
+                           
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-menu-widget clearfix">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="about.html">Home</a></li>
+                                    <li><a href="blog.html">About</a></li>
+                                    <li><a href="shop.html">Services</a></li>
+                                    <li><a href="locations.html">Contact us</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-menu-widget clearfix">
+                            <h4 class="footer-title">Services</h4>
+                            <div class="footer-menu">
+                                <ul>
+                                  
+                                    
+                                    <li><a href="login.html">Login</a></li>
+                                    <li><a href="account.html">My account</a></li>
+                                    <li><a href="wishlist.html">Privacy Policy</a></li>
+                                    <li><a href="about.html">Terms & Conditions</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-menu-widget clearfix">
+                            <h4 class="footer-title">Address</h4>
                             <div class="footer-address">
                                 <ul>
                                     <li>
@@ -477,52 +515,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget footer-menu-widget clearfix">
-                            <h4 class="footer-title">Company</h4>
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="shop.html">All Products</a></li>
-                                    <li><a href="locations.html">Locations Map</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget footer-menu-widget clearfix">
-                            <h4 class="footer-title">Services</h4>
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="order-tracking.html">Order tracking</a></li>
-                                    <li><a href="wishlist.html">Wish List</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="account.html">My account</a></li>
-                                    <li><a href="about.html">Terms & Conditions</a></li>
-                                    <li><a href="about.html">Promotional Offers</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-md-6 col-sm-6 col-12">
-                        <div class="footer-widget footer-menu-widget clearfix">
-                            <h4 class="footer-title">Customer Care</h4>
-                            <div class="footer-menu">
-                                <ul>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="account.html">My account</a></li>
-                                    <li><a href="wishlist.html">Wish List</a></li>
-                                    <li><a href="order-tracking.html">Order tracking</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                    <!-- <div class="col-xl-3 col-md-6 col-sm-12 col-12">
                         <div class="footer-widget footer-newsletter-widget">
                             <h4 class="footer-title">Newsletter</h4>
                             <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
@@ -537,7 +530,7 @@
                             <h5 class="mt-30">We Accept</h5>
                             <img src="img/icons/payment-4.png" alt="Payment Image">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
