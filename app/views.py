@@ -2,12 +2,15 @@ from django.shortcuts import render
 from django import template
 from django.template import loader
 from django.http import JsonResponse,HttpResponse
+from django.shortcuts import render
+from .models import Bannersection
 
 # Create your views here.
 
 def home(request):
     context = {}
     try:
+        bgimg = Bannersection.objects.filter().order_by('-Id')
         return render(request, 'uifiles/home.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')
