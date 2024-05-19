@@ -8,9 +8,10 @@ from .models import Bannersection
 # Create your views here.
 
 def home(request):
-    context = {}
+    bgimg = Bannersection.objects.filter().order_by('-Id')
+    context = {'bgimg':bgimg}
     try:
-        bgimg = Bannersection.objects.filter().order_by('-Id')
+        
         return render(request, 'uifiles/home.html',context)
     except template.TemplateDoesNotExist:
         html_template = loader.get_template('uifiles/page-404.html')

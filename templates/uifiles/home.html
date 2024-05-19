@@ -6,6 +6,7 @@
  <div class="ltn__slider-area ltn__slider-3  section-bg-1">
     <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1">
         <!-- ltn__slide-item -->
+        {% for item in bgimg %} 
         <div class="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3-normal ltn__slide-item-3">
             <div class="ltn__slide-item-inner">
                 <div class="container">
@@ -18,13 +19,13 @@
                                             <i class="fa fa-play"></i>
                                         </a>
                                     </div>
-                                    <h6 class="slide-sub-title white-color--- animated"><span><i class="fas fa-home"></i></span> Real Estate Agency</h6>
-                                    <h1 class="slide-title animated ">Find Your Dream <br> House By Us</h1>
+                                    <h6 class="slide-sub-title white-color--- animated"><span><i class="fas fa-home"></i></span> {{item.Category}}</h6>
+                                    <h1 class="slide-title animated ">{{item.Title}}</h1>
                                     <div class="slide-brief animated">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                        <p>{{item.Paragraph}}</p>
                                     </div>
                                     <div class="btn-wrapper animated">
-                                        <a href="about.html" class="theme-btn-1 btn btn-effect-1">Make An Enquiry</a>
+                                        <a href="about.html" class="theme-btn-1 btn btn-effect-1">{{item.Btntext}}</a>
                                         <!-- <a class="ltn__video-play-btn bg-white" href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&amp;showinfo=0" data-rel="lightcase">
                                             <i class="icon-play  ltn__secondary-color"></i>
                                         </a> -->
@@ -32,13 +33,14 @@
                                 </div>
                             </div>
                             <div class="slide-item-img">
-                                <img src="{% static 'img/slider/21.png' %}" alt="#">
+                                <img src="/media/{{item.Bannerimg}}" alt="#">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        {% endfor %}
         <!-- ltn__slide-item -->
         <div class="ltn__slide-item ltn__slide-item-2  ltn__slide-item-3-normal ltn__slide-item-3">
             <div class="ltn__slide-item-inner  text-right text-end">
